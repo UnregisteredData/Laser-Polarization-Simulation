@@ -1,3 +1,6 @@
+#PLEASE READ THE README
+#scroll to the bottom for the function call
+
 from math import sin, cos, pi, sqrt
 from scipy.special import itairy, airy as sp_airy
 from scipy.integrate import dblquad, quad
@@ -141,7 +144,6 @@ def int_4 (chi_e = chi_e):
     return (ans, err)
 
 
-#Important Function
 def xi_zeta2 (xi_zeta, chi_e=chi_e):
     return (xi_zeta * int_1(chi_e)[0] + int_4(chi_e)[0]) / P(xi_zeta, chi_e)
 
@@ -159,6 +161,15 @@ def hdotter (phi_ce=phi_ce, dphi=dphi):
     return quad (lambda tau: sgn(hdot(tau, phi_ce, dphi)),
                  -dphi, dphi)
 
-#first number is initial polarization
-#second is Chi_e
-print(xi_zeta2(0, 0.03))
+
+
+#first number is % initial polarization, second is Chi_e
+#Call the function as such, substituting values of polarization and Chi_e
+#Feel free to load this program up and play around with different values
+
+xi_zeta2(polarization, Chi_e)
+
+
+
+
+
