@@ -1,4 +1,4 @@
-# EIC-Laser
+# EIC-Laser Simulation
 
 This code takes inputs of Chi-e, and initial polarization, although Phi and Phi-CE values can also be inputted, if desired.
 
